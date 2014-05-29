@@ -21,49 +21,36 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="topbar">
+            <p>Turn down for Chat</p>
+            <button class="login">Login</button>
+        </div>
 
         <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">chatapp</h3>
-            </div>
+            <div class="chatlog">Marfa crucifix fingerstache master cleanse, fashion axe authentic typewriter kitsch Williamsburg lo-fi vinyl PBR Intelligentsia cliche. Cosby sweater ugh locavore, dreamcatcher 90's polaroid roof party gastropub distillery fixie kogi cray Williamsburg Intelligentsia. 8-bit messenger bag try-hard food truck, you probably haven't heard of them kogi selfies fanny pack shabby chic skateboard keytar Cosby sweater Austin High Life swag. Narwhal actually try-hard, Tumblr four loko banjo chillwave McSweeney's fingerstache organic +1 pickled tofu Austin sriracha. Kickstarter VHS readymade kogi whatever fap, sustainable literally Odd Future post-ironic. Banh mi meggings cray Etsy. DIY bicycle rights viral, blog wolf aesthetic Tonx locavore Brooklyn put a bird on it.
 
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-            </div>
+            Gentrify drinking vinegar crucifix ethical. Tousled High Life Godard skateboard. Banjo Carles cornhole, roof party Wes Anderson Schlitz Helvetica Etsy. Fingerstache normcore skateboard, sustainable kitsch mumblecore pug tattooed whatever hella trust fund chambray High Life PBR&B. Lo-fi Brooklyn chia, literally master cleanse mlkshk gentrify Blue Bottle Schlitz distillery vegan PBR&B readymade umami messenger bag. Artisan Godard meh, Truffaut fashion axe American Apparel shabby chic flexitarian slow-carb. Church-key Banksy wolf banh mi, vegan authentic asymmetrical stumptown freegan hella.
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+            VHS 8-bit sartorial next level whatever pour-over. Next level brunch wayfarers Vice sriracha, locavore Carles kitsch keytar Neutra chillwave jean shorts seitan gentrify cray. Kickstarter kogi Portland raw denim, Pinterest selfies Wes Anderson. Readymade quinoa Portland, drinking vinegar YOLO XOXO disrupt forage plaid letterpress fap bespoke Wes Anderson. Chia Wes Anderson Schlitz occupy stumptown. Literally swag sartorial fingerstache. Keytar beard organic before they sold out mumblecore VHS.
 
-                    <h4>Sass</h4>
-                    <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
+            Occupy skateboard lo-fi retro typewriter disrupt, PBR&B Tonx tattooed small batch. Dreamcatcher Godard chambray, butcher vegan Marfa fixie bicycle rights. Umami Blue Bottle pickled, DIY dreamcatcher disrupt drinking vinegar leggings normcore irony VHS Marfa mlkshk pug. VHS raw denim brunch ethnic. Vice 8-bit artisan, Schlitz crucifix disrupt mumblecore Shoreditch deep v whatever ugh leggings selvage meggings fixie. Forage semiotics squid farm-to-table, four loko salvia cred yr. Austin gentrify Neutra single-origin coffee kogi Vice shabby chic art party, sustainable swag four loko chillwave.</div>
+        </div>
 
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-
-                </div>
-            </div>
-
-            <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <div class="bottombar">
+            <div class="chatpost">
+                <input class="message" placeholder="type here"></input>
+                <button class="submit">Submit</button>
             </div>
 
         </div>
-
+        <script type="text/javascript" class="blah">
+        <span><%=message%></span>
+        </script>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
