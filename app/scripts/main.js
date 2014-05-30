@@ -6,6 +6,7 @@ var user = 'Joshua';
 //template for incoming chat data
 var chatlog = _.template($('.chat-message').text());
 
+
 //grabs array of data and appends it to chatlog
 function renderChat(data) {
 	//clears chat of existing content
@@ -31,8 +32,8 @@ function loadChat () {
 		//calls getChat and passes in the array from tiny server
 		renderChat(data);
 
-	})
-};
+	});
+}
 
 //constructor that makes a message object to be sent
 function Message(user, message, time) {
@@ -42,15 +43,17 @@ function Message(user, message, time) {
 	this.meta = 'WHOA';
 }
 
+//sends message to the server
 function updateChat(info) {
 	$.post('http://tiny-pizza-server.herokuapp.com/collections/chat-messages', info);
-};
+}
 
 
 //when button is clicked it creates an instance of Message
 $('.submit').click(function() {
 	//sets whatever is in the input feild and sets it to message
 	var message = $('.message').val();
+	$('.message').val('');
 	//sets curren epoch time as time
 	var time = Date.now();
 	//creates instance called outgoing
@@ -58,8 +61,9 @@ $('.submit').click(function() {
 
 	//sends the data outgoing has to the server
 	updateChat(outgoing);
-	var form = document.getElementById('.message');
-	$('.message').form.reset();
+	// $('.message').form.reset();
+
 });
 
+//updates the chat log every second
 setInterval(loadChat, 1000);
