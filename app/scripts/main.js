@@ -2,7 +2,7 @@
 //initializes messages variable
 var serverData;
 //varialble for current user
-var user = 'Joshua';
+var user = 'Lil John';
 //template for incoming chat data
 var chatlog = _.template($('.chat-message').text());
 
@@ -67,3 +67,4 @@ $('.submit').click(function() {
 
 //updates the chat log every second
 setInterval(loadChat, 1000);
+
