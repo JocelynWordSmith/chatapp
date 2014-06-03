@@ -35,6 +35,7 @@ function loadChat () {
 	});
 }
 
+
 //constructor that makes a message object to be sent
 function Message(user, message, time) {
 	this.user = user || '';

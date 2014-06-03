@@ -1,0 +1,22 @@
+$.ajax({type: "DELETE", url: "http://tiny-pizza-server.herokuapp.com/collections/chat-messages/5387bfb933d89b020000009c", data:   {
+    "user": "Joshua",
+    "message": "<iframe width=\"420\" height=\"345\" src=\"http://www.youtube.com/watch?v=QH2-TGUlwu4\"> </iframe>",
+    "time": "1401405369069",
+    "meta": "WHOA",
+    "_id": "5387bfb933d89b020000009c"
+  }  
+}) 
+
+
+
+var ids = [];
+$.getJSON('http://tiny-pizza-server.herokuapp.com/collections/chat-messages').done(function(data) {
+	for (var i = 0; i < data.length - 1; i += 1) {
+		ids[i] = data[i]._id;
+	}
+})
+
+for (var i = 0; i < ids.length - 1; i += 2) {
+	$.ajax({type: "PUT", url: "http://tiny-pizza-server.herokuapp.com/collections/chat-messages/" + ids[i] + "", data: {"name": "Shaq Attack", "message": '<img src="http://i.imgur.com/u9dpEkS.gif'>"}  
+}) 
+}
